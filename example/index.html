@@ -1,0 +1,103 @@
+<!-- saved from url=(0014)about:internet -->
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+  <title>MD-Components Example</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="adress=no" />
+  <meta name="theme-color" content="#000" />
+  <meta name="msapplication-navbutton-color" content="#000" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
+  <link rel="stylesheet" href="../md-components.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body class="mobile">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-10 offset-1">
+        <h5 class="color-black" style="margin-top: 16px;">Cards</h5>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-image" style="background-image: url( 'images/1-min.jpg' );"></div>
+          <div class="card-content">
+            <div class="card-subtitle">Whatever</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere quam ut finibus mattis. In hac habitasse platea dictumst. Curabitur et orci elementum, dictum ante eu, lacinia urna. Nam accumsan sodales posuere.</p>
+          </div>
+          <hr />
+          <button class="button-flat black">comment</button>
+          <button class="button-flat blue">share</button>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card card-a">
+          <div class="card-image" style="background-image: url( 'images/2-min.jpg' );">
+            <div class="card-subtitle">Something Else</div>
+          </div>
+          <div class="card-content">
+            <p>Curabitur et orci elementum, dictum ante eu, lacinia urna. Nam accumsan sodales posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere quam ut finibus mattis. In hac habitasse platea dictumst.</p>
+          </div>
+          <hr />
+          <button class="button-flat black">comment</button>
+          <button class="button-flat blue">share</button>
+        </div>
+      </div>
+
+    </div>
+
+    <form class="row background-darkest">
+
+      <div class="col-10 offset-1">
+        <h5 class="color-white-dark" style="margin-top: 16px;">Sign up for free</h5>
+      </div>
+
+      <div class="col-10 offset-1">
+        <div class="md-input-group dark yellow">
+          <input id="name" type="text" required="" placeholder="What is your name?" />
+          <label for="name">Name</label>
+          <span class="md-input-helper">To sign in, you will need a name</span>
+          <hr />
+          <hr class="highlight" />
+        </div>
+      </div>
+
+      <div class="col-10 offset-1">
+        <div class="md-input-group dark yellow">
+          <input id="password" type="password" required="" placeholder="Enter strong password." />
+          <label for="password">Password</label>
+          <span class="md-input-helper">You can use online password generators</span>
+          <hr />
+          <hr class="highlight" />
+        </div>
+      </div>
+
+      <div class="col-10 offset-1">
+        <button class="button-raised dark yellow float-right">sign up</button>
+      </div>
+
+    </form>
+
+  </div>
+
+  <button id="add" class="floating-button amber hidden">&plus;</button>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
