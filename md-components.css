@@ -6,7 +6,7 @@
 
 /** Small reset.css
  * And yes, I know about normalize
- * better thah reset.
+ * better than reset.
  * ------------------------- */
 
 /**
@@ -56,14 +56,6 @@ a {
   -webkit-tap-highlight-color: transparent;
   -webkit-focus-ring-color: transparent;
   -webkit-text-size-adjust: none;
-}
-
-html, body {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  height: 100%;
-  min-height: 100%;
 }
 
 /** Grid.
@@ -1763,7 +1755,7 @@ a.floating-button {
 /**
  * 1. height is calculated as follows:
  *    44px - input
- *    13px - label
+ *    12px - label
  *    24px - helper-text
  */
 .md-input-group {
@@ -1838,7 +1830,7 @@ a.floating-button {
   left: 0;
   color: rgba( 0, 0, 0, 0.38 );
   font-size: 16px;
-  line-height: 48px;
+  line-height: 44px;
   -webkit-transition-property: top, color, font-size, line-height;
   -moz-transition-property: top, color, font-size, line-height;
   -o-transition-property: top, color, font-size, line-height;
