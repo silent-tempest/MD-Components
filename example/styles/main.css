@@ -28,10 +28,3 @@ html, body {
 body {
   font-family: Ubuntu, Helvetica, sans-serif;
 }
-
-#add {
-  position: fixed;
-  z-index: 2;
-  right: 16px;
-  bottom: 16px;
-}

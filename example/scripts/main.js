@@ -3,7 +3,8 @@
 'use strict';
 
 if ( 'ontouchend' in window == false ) {
-  document.body.classList.remove( 'touchable' );
+  document.body.classList.remove( 'mobile' );
+  document.body.classList.add( 'desktop' );
 }
 
 const listener = function ( event ) {

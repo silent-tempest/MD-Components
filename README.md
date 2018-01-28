@@ -5,17 +5,18 @@ A set of Material Design components and a 12-column grid. I wrote this framework
 + 12-column grid
 * Buttons (in process)
   * Flat
-  * Flat-Icon (in process)
-  * Raised (in process 50%)
-  * Floating (in process 50%)
+  * Flat-Icon
+  * Raised (in process 75%)
+  * Floating (in process 75%)
   * Checkbox (in process 0%)
   * Radio (in process 0%)
 * Input Box (in process 75%)
-* Card (in process 75%)
+* Card
 
 ## Will be added
 * Toolbar
 * Drawer
+* Dialog Box
 
 ## Grid
 Grid has five breakpoints:
