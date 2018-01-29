@@ -1,7 +1,5 @@
 ;( function ( window ) {
 
-try {
-
 'use strict';
 
 var listener = function ( event ) {
@@ -23,11 +21,5 @@ addEventListener( 'load', function () {
     button.addEventListener( 'click', listener, false );
   }
 }, false );
-
-if ( document.documentElement.clientWidth > 480 ) {
-  alert( 'IMPORTANT: this example adapted only for mobile phones.' );
-}
-
-} catch ( ex ) { alert( ex ); }
 
 } )( this );
