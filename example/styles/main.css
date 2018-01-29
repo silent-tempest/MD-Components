@@ -1,3 +1,15 @@
+@font-face {
+  font-family: UbuntuFont;
+  font-weight: 500;
+  src: url( 'fonts/Ubuntu-Medium.ttf' );
+}
+
+@font-face {
+  font-family: UbuntuFont;
+  font-weight: 400;
+  src: url( 'fonts/Ubuntu-Regular.ttf' );
+}
+
 /**
  * Native-Application experience
  */
@@ -13,18 +25,11 @@ html, body {
   height: 100%;
 }
 
-@font-face {
-  font-family: Ubuntu;
-  font-weight: 500;
-  src: url( 'fonts/Ubuntu-Medium.ttf' );
-}
-
-@font-face {
-  font-family: Ubuntu;
-  font-weight: 400;
-  src: url( 'fonts/Ubuntu-Regular.ttf' );
-}
-
 body {
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: UbuntuFont, Helvetica, Roboto, sans-serif;
+}
+
+hr {
+  width: 100%;
+  height: 2px;
 }

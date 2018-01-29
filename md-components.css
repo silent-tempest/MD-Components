@@ -1209,6 +1209,7 @@ body.desktop .card {
   position: relative;
   width: 100%;
   height: 175px;
+  background-color: #ddd;
 }
 
 .card .card-image,
@@ -1425,7 +1426,10 @@ h6 {
   color: rgba( 244, 67, 54, 0.87 );
 }
 
-.background-red,
+.background-red {
+  background-color: #f44336;
+}
+
 .button-raised.red,
 .floating-button.red {
   background: #f44336;
@@ -1466,7 +1470,10 @@ h6 {
   color: rgba( 233, 30, 99, 0.87 );
 }
 
-.background-pink,
+.background-pink {
+  background-color: #e91e63;
+}
+
 .button-raised.pink,
 .floating-button.pink {
   background: #e91e63;
@@ -1507,7 +1514,10 @@ h6 {
   color: rgba( 156, 39, 176, 0.87 );
 }
 
-.background-purple,
+.background-purple {
+  background-color: #9c27b0;
+}
+
 .button-raised.purple,
 .floating-button.purple {
   background: #9c27b0;
@@ -1526,44 +1536,47 @@ h6 {
   background: #7b1fa2;
 }
 
-.color-deeppurple-dark-secondary,
-.md-input-group.dark.deeppurple input:focus ~ label {
+.color-deep-purple-dark-secondary,
+.md-input-group.dark.deep-purple input:focus ~ label {
   color: rgba( 103, 58, 183, 0.7 );
 }
 
-.color-deeppurple-secondary,
-.md-input-group.deeppurple input:focus ~ label {
+.color-deep-purple-secondary,
+.md-input-group.deep-purple input:focus ~ label {
   color: rgba( 103, 58, 183, 0.54 );
 }
 
-.color-deeppurple-dark,
-.button-flat.dark.deeppurple,
-.button-flat-icon.dark.deeppurple {
+.color-deep-purple-dark,
+.button-flat.dark.deep-purple,
+.button-flat-icon.dark.deep-purple {
   color: #673ab7;
 }
 
-.color-deeppurple,
-.button-flat.deeppurple,
-.button-flat-icon.deeppurple {
+.color-deep-purple,
+.button-flat.deep-purple,
+.button-flat-icon.deep-purple {
   color: rgba( 103, 58, 183, 0.87 );
 }
 
-.background-deeppurple,
-.button-raised.deeppurple,
-.floating-button.deeppurple {
+.background-deep-purple {
+  background-color: #673ab7;
+}
+
+.button-raised.deep-purple,
+.floating-button.deep-purple {
   background: #673ab7;
 }
 
-.md-input-group.dark.deeppurple .highlight {
+.md-input-group.dark.deep-purple .highlight {
   background: rgba( 103, 58, 183, 0.7 );
 }
 
-.md-input-group.deeppurple .highlight {
+.md-input-group.deep-purple .highlight {
   background: rgba( 103, 58, 183, 0.42 );
 }
 
-.button-raised.deeppurple:active,
-.floating-button.deeppurple:active {
+.button-raised.deep-purple:active,
+.floating-button.deep-purple:active {
   background: undefined;
 }
 
@@ -1589,7 +1602,10 @@ h6 {
   color: rgba( 63, 81, 181, 0.87 );
 }
 
-.background-indigo,
+.background-indigo {
+  background-color: #3f51b5;
+}
+
 .button-raised.indigo,
 .floating-button.indigo {
   background: #3f51b5;
@@ -1630,7 +1646,10 @@ h6 {
   color: rgba( 33, 150, 243, 0.87 );
 }
 
-.background-blue,
+.background-blue {
+  background-color: #2196f3;
+}
+
 .button-raised.blue,
 .floating-button.blue {
   background: #2196f3;
@@ -1649,44 +1668,47 @@ h6 {
   background: #1976d2;
 }
 
-.color-lightblue-dark-secondary,
-.md-input-group.dark.lightblue input:focus ~ label {
+.color-light-blue-dark-secondary,
+.md-input-group.dark.light-blue input:focus ~ label {
   color: rgba( 3, 169, 244, 0.7 );
 }
 
-.color-lightblue-secondary,
-.md-input-group.lightblue input:focus ~ label {
+.color-light-blue-secondary,
+.md-input-group.light-blue input:focus ~ label {
   color: rgba( 3, 169, 244, 0.54 );
 }
 
-.color-lightblue-dark,
-.button-flat.dark.lightblue,
-.button-flat-icon.dark.lightblue {
+.color-light-blue-dark,
+.button-flat.dark.light-blue,
+.button-flat-icon.dark.light-blue {
   color: #03a9f4;
 }
 
-.color-lightblue,
-.button-flat.lightblue,
-.button-flat-icon.lightblue {
+.color-light-blue,
+.button-flat.light-blue,
+.button-flat-icon.light-blue {
   color: rgba( 3, 169, 244, 0.87 );
 }
 
-.background-lightblue,
-.button-raised.lightblue,
-.floating-button.lightblue {
+.background-light-blue {
+  background-color: #03a9f4;
+}
+
+.button-raised.light-blue,
+.floating-button.light-blue {
   background: #03a9f4;
 }
 
-.md-input-group.dark.lightblue .highlight {
+.md-input-group.dark.light-blue .highlight {
   background: rgba( 3, 169, 244, 0.7 );
 }
 
-.md-input-group.lightblue .highlight {
+.md-input-group.light-blue .highlight {
   background: rgba( 3, 169, 244, 0.42 );
 }
 
-.button-raised.lightblue:active,
-.floating-button.lightblue:active {
+.button-raised.light-blue:active,
+.floating-button.light-blue:active {
   background: undefined;
 }
 
@@ -1712,7 +1734,10 @@ h6 {
   color: rgba( 0, 188, 212, 0.87 );
 }
 
-.background-cyan,
+.background-cyan {
+  background-color: #00bcd4;
+}
+
 .button-raised.cyan,
 .floating-button.cyan {
   background: #00bcd4;
@@ -1753,7 +1778,10 @@ h6 {
   color: rgba( 0, 150, 136, 0.87 );
 }
 
-.background-teal,
+.background-teal {
+  background-color: #009688;
+}
+
 .button-raised.teal,
 .floating-button.teal {
   background: #009688;
@@ -1794,7 +1822,10 @@ h6 {
   color: rgba( 76, 175, 80, 0.87 );
 }
 
-.background-green,
+.background-green {
+  background-color: #4caf50;
+}
+
 .button-raised.green,
 .floating-button.green {
   background: #4caf50;
@@ -1813,44 +1844,47 @@ h6 {
   background: #388e3c;
 }
 
-.color-lightgreen-dark-secondary,
-.md-input-group.dark.lightgreen input:focus ~ label {
+.color-light-green-dark-secondary,
+.md-input-group.dark.light-green input:focus ~ label {
   color: rgba( 139, 195, 74, 0.7 );
 }
 
-.color-lightgreen-secondary,
-.md-input-group.lightgreen input:focus ~ label {
+.color-light-green-secondary,
+.md-input-group.light-green input:focus ~ label {
   color: rgba( 139, 195, 74, 0.54 );
 }
 
-.color-lightgreen-dark,
-.button-flat.dark.lightgreen,
-.button-flat-icon.dark.lightgreen {
+.color-light-green-dark,
+.button-flat.dark.light-green,
+.button-flat-icon.dark.light-green {
   color: #8bc34a;
 }
 
-.color-lightgreen,
-.button-flat.lightgreen,
-.button-flat-icon.lightgreen {
+.color-light-green,
+.button-flat.light-green,
+.button-flat-icon.light-green {
   color: rgba( 139, 195, 74, 0.87 );
 }
 
-.background-lightgreen,
-.button-raised.lightgreen,
-.floating-button.lightgreen {
+.background-light-green {
+  background-color: #8bc34a;
+}
+
+.button-raised.light-green,
+.floating-button.light-green {
   background: #8bc34a;
 }
 
-.md-input-group.dark.lightgreen .highlight {
+.md-input-group.dark.light-green .highlight {
   background: rgba( 139, 195, 74, 0.7 );
 }
 
-.md-input-group.lightgreen .highlight {
+.md-input-group.light-green .highlight {
   background: rgba( 139, 195, 74, 0.42 );
 }
 
-.button-raised.lightgreen:active,
-.floating-button.lightgreen:active {
+.button-raised.light-green:active,
+.floating-button.light-green:active {
   background: undefined;
 }
 
@@ -1876,7 +1910,10 @@ h6 {
   color: rgba( 205, 220, 57, 0.87 );
 }
 
-.background-lime,
+.background-lime {
+  background-color: #cddc39;
+}
+
 .button-raised.lime,
 .floating-button.lime {
   background: #cddc39;
@@ -1917,7 +1954,10 @@ h6 {
   color: rgba( 255, 235, 59, 0.87 );
 }
 
-.background-yellow,
+.background-yellow {
+  background-color: #ffeb3b;
+}
+
 .button-raised.yellow,
 .floating-button.yellow {
   background: #ffeb3b;
@@ -1958,7 +1998,10 @@ h6 {
   color: rgba( 255, 193, 7, 0.87 );
 }
 
-.background-amber,
+.background-amber {
+  background-color: #ffc107;
+}
+
 .button-raised.amber,
 .floating-button.amber {
   background: #ffc107;
@@ -1999,7 +2042,10 @@ h6 {
   color: rgba( 255, 152, 0, 0.87 );
 }
 
-.background-orange,
+.background-orange {
+  background-color: #ff9800;
+}
+
 .button-raised.orange,
 .floating-button.orange {
   background: #ff9800;
@@ -2018,44 +2064,47 @@ h6 {
   background: #f57c00;
 }
 
-.color-deeporange-dark-secondary,
-.md-input-group.dark.deeporange input:focus ~ label {
+.color-deep-orange-dark-secondary,
+.md-input-group.dark.deep-orange input:focus ~ label {
   color: rgba( 255, 87, 34, 0.7 );
 }
 
-.color-deeporange-secondary,
-.md-input-group.deeporange input:focus ~ label {
+.color-deep-orange-secondary,
+.md-input-group.deep-orange input:focus ~ label {
   color: rgba( 255, 87, 34, 0.54 );
 }
 
-.color-deeporange-dark,
-.button-flat.dark.deeporange,
-.button-flat-icon.dark.deeporange {
+.color-deep-orange-dark,
+.button-flat.dark.deep-orange,
+.button-flat-icon.dark.deep-orange {
   color: #ff5722;
 }
 
-.color-deeporange,
-.button-flat.deeporange,
-.button-flat-icon.deeporange {
+.color-deep-orange,
+.button-flat.deep-orange,
+.button-flat-icon.deep-orange {
   color: rgba( 255, 87, 34, 0.87 );
 }
 
-.background-deeporange,
-.button-raised.deeporange,
-.floating-button.deeporange {
+.background-deep-orange {
+  background-color: #ff5722;
+}
+
+.button-raised.deep-orange,
+.floating-button.deep-orange {
   background: #ff5722;
 }
 
-.md-input-group.dark.deeporange .highlight {
+.md-input-group.dark.deep-orange .highlight {
   background: rgba( 255, 87, 34, 0.7 );
 }
 
-.md-input-group.deeporange .highlight {
+.md-input-group.deep-orange .highlight {
   background: rgba( 255, 87, 34, 0.42 );
 }
 
-.button-raised.deeporange:active,
-.floating-button.deeporange:active {
+.button-raised.deep-orange:active,
+.floating-button.deep-orange:active {
   background: undefined;
 }
 
@@ -2081,7 +2130,10 @@ h6 {
   color: rgba( 121, 85, 72, 0.87 );
 }
 
-.background-brown,
+.background-brown {
+  background-color: #795548;
+}
+
 .button-raised.brown,
 .floating-button.brown {
   background: #795548;
@@ -2122,7 +2174,10 @@ h6 {
   color: rgba( 158, 158, 158, 0.87 );
 }
 
-.background-grey,
+.background-grey {
+  background-color: #9e9e9e;
+}
+
 .button-raised.grey,
 .floating-button.grey {
   background: #9e9e9e;
@@ -2141,44 +2196,47 @@ h6 {
   background: #616161;
 }
 
-.color-bluegrey-dark-secondary,
-.md-input-group.dark.bluegrey input:focus ~ label {
+.color-blue-grey-dark-secondary,
+.md-input-group.dark.blue-grey input:focus ~ label {
   color: rgba( 96, 125, 139, 0.7 );
 }
 
-.color-bluegrey-secondary,
-.md-input-group.bluegrey input:focus ~ label {
+.color-blue-grey-secondary,
+.md-input-group.blue-grey input:focus ~ label {
   color: rgba( 96, 125, 139, 0.54 );
 }
 
-.color-bluegrey-dark,
-.button-flat.dark.bluegrey,
-.button-flat-icon.dark.bluegrey {
+.color-blue-grey-dark,
+.button-flat.dark.blue-grey,
+.button-flat-icon.dark.blue-grey {
   color: #607d8b;
 }
 
-.color-bluegrey,
-.button-flat.bluegrey,
-.button-flat-icon.bluegrey {
+.color-blue-grey,
+.button-flat.blue-grey,
+.button-flat-icon.blue-grey {
   color: rgba( 96, 125, 139, 0.87 );
 }
 
-.background-bluegrey,
-.button-raised.bluegrey,
-.floating-button.bluegrey {
+.background-blue-grey {
+  background-color: #607d8b;
+}
+
+.button-raised.blue-grey,
+.floating-button.blue-grey {
   background: #607d8b;
 }
 
-.md-input-group.dark.bluegrey .highlight {
+.md-input-group.dark.blue-grey .highlight {
   background: rgba( 96, 125, 139, 0.7 );
 }
 
-.md-input-group.bluegrey .highlight {
+.md-input-group.blue-grey .highlight {
   background: rgba( 96, 125, 139, 0.42 );
 }
 
-.button-raised.bluegrey:active,
-.floating-button.bluegrey:active {
+.button-raised.blue-grey:active,
+.floating-button.blue-grey:active {
   background: undefined;
 }
 
@@ -2204,7 +2262,10 @@ h6 {
   color: rgba( 255, 255, 255, 0.87 );
 }
 
-.background-white,
+.background-white {
+  background-color: #ffffff;
+}
+
 .button-raised.white,
 .floating-button.white {
   background: #ffffff;
@@ -2245,7 +2306,10 @@ h6 {
   color: rgba( 0, 0, 0, 0.87 );
 }
 
-.background-black,
+.background-black {
+  background-color: #000000;
+}
+
 .button-raised.black,
 .floating-button.black {
   background: #000000;
@@ -2286,7 +2350,10 @@ h6 {
   color: rgba( 33, 33, 33, 0.87 );
 }
 
-.background-darkest,
+.background-darkest {
+  background-color: #212121;
+}
+
 .button-raised.darkest,
 .floating-button.darkest {
   background: #212121;
@@ -2305,51 +2372,54 @@ h6 {
   background: #474747;
 }
 
-.color-darkgrey-dark-secondary,
-.md-input-group.dark.darkgrey input:focus ~ label {
+.color-dark-grey-dark-secondary,
+.md-input-group.dark.dark-grey input:focus ~ label {
   color: rgba( 66, 66, 66, 0.7 );
 }
 
-.color-darkgrey-secondary,
-.md-input-group.darkgrey input:focus ~ label {
+.color-dark-grey-secondary,
+.md-input-group.dark-grey input:focus ~ label {
   color: rgba( 66, 66, 66, 0.54 );
 }
 
-.color-darkgrey-dark,
-.button-flat.dark.darkgrey,
-.button-flat-icon.dark.darkgrey {
+.color-dark-grey-dark,
+.button-flat.dark.dark-grey,
+.button-flat-icon.dark.dark-grey {
   color: #424242;
 }
 
-.color-darkgrey,
-.button-flat.darkgrey,
-.button-flat-icon.darkgrey {
+.color-dark-grey,
+.button-flat.dark-grey,
+.button-flat-icon.dark-grey {
   color: rgba( 66, 66, 66, 0.87 );
 }
 
-.background-darkgrey,
-.button-raised.darkgrey,
-.floating-button.darkgrey {
+.background-dark-grey {
+  background-color: #424242;
+}
+
+.button-raised.dark-grey,
+.floating-button.dark-grey {
   background: #424242;
 }
 
-.md-input-group.dark.darkgrey .highlight {
+.md-input-group.dark.dark-grey .highlight {
   background: rgba( 66, 66, 66, 0.7 );
 }
 
-.md-input-group.darkgrey .highlight {
+.md-input-group.dark-grey .highlight {
   background: rgba( 66, 66, 66, 0.42 );
 }
 
-.button-raised.darkgrey:active,
-.floating-button.darkgrey:active {
-  background: #696969;
+.button-raised.dark-grey:active,
+.floating-button.dark-grey:active {
+  background: #262626;
 }
 
 .button-raised.white,
 .floating-button.white,
-.button-raised.lightblue,
-.floating-button.lightblue,
+.button-raised.light-blue,
+.floating-button.light-blue,
 .button-raised.lime,
 .floating-button.lime,
 .button-raised.yellow,
@@ -2362,4 +2432,3 @@ h6 {
 .floating-button.default {
   color: rgba( 0, 0, 0, 0.87 );
 }
-
