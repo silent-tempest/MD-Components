@@ -1577,7 +1577,7 @@ h6 {
 
 .button-raised.deep-purple:active,
 .floating-button.deep-purple:active {
-  background: undefined;
+  background: #512da8;
 }
 
 .color-indigo-dark-secondary,
@@ -1709,7 +1709,7 @@ h6 {
 
 .button-raised.light-blue:active,
 .floating-button.light-blue:active {
-  background: undefined;
+  background: #0288d1;
 }
 
 .color-cyan-dark-secondary,
@@ -1885,7 +1885,7 @@ h6 {
 
 .button-raised.light-green:active,
 .floating-button.light-green:active {
-  background: undefined;
+  background: #689f38;
 }
 
 .color-lime-dark-secondary,
@@ -2105,7 +2105,7 @@ h6 {
 
 .button-raised.deep-orange:active,
 .floating-button.deep-orange:active {
-  background: undefined;
+  background: #e64a19;
 }
 
 .color-brown-dark-secondary,
@@ -2237,7 +2237,7 @@ h6 {
 
 .button-raised.blue-grey:active,
 .floating-button.blue-grey:active {
-  background: undefined;
+  background: #455a64;
 }
 
 .color-white-dark-secondary,
