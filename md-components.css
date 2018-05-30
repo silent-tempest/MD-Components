@@ -1346,6 +1346,63 @@ body.desktop .card {
   color: rgba( 255, 255, 255, 0.7 );
 }
 
+/** Radio
+ * -------------------------  */
+
+/* <div class="md-radio-group blue">
+    <input class="md-radio-input" type="radio" name="radio-1" id="choice-1" />
+
+    <label class="md-radio-label" for="choice-1">
+
+      <div class="md-radio-outer">
+        <div class="md-radio-inner"></div>
+      </div>
+
+      Choice 1
+
+    </label>
+  </div> */
+
+.md-radio-input {
+  display: none;
+}
+
+.md-radio-label {
+  height: 48px;
+  padding: 16px 0;
+  display: block;
+}
+
+.md-radio-input:checked + .md-radio-label .md-radio-inner {
+  transform: scale( 1 );
+  transition: transform 0.1s;
+}
+
+.md-radio-input, .md-radio-inner, .md-radio-outer {
+  box-sizing: border-box;
+}
+
+.md-radio-inner, .md-radio-outer {
+  border-radius: 50%;
+}
+
+.md-radio-outer {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  border: 2px solid;
+  vertical-align: middle;
+  transition: color 0.1s;
+}
+
+.md-radio-inner {
+  transition: transform 0.075s;
+  width: 100%;
+  height: 100%;
+  transform: scale( 0 );
+}
+
 /** Some quick-style classes
  * -------------------------  */
 
@@ -1451,7 +1508,8 @@ body.mobile a:active {
 
 .color-red-dark,
 .button-flat.dark.red,
-.button-flat-icon.dark.red {
+.button-flat-icon.dark.red,
+.md-radio-group.red .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #f44336;
 }
 
@@ -1470,7 +1528,8 @@ body.mobile a:active {
 }
 
 .button-raised.red,
-.floating-button.red {
+.floating-button.red,
+.md-radio-group.red .md-radio-inner {
   background: #f44336;
 }
 
@@ -1511,7 +1570,8 @@ body.mobile a:active {
 
 .color-pink-dark,
 .button-flat.dark.pink,
-.button-flat-icon.dark.pink {
+.button-flat-icon.dark.pink,
+.md-radio-group.pink .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #e91e63;
 }
 
@@ -1530,7 +1590,8 @@ body.mobile a:active {
 }
 
 .button-raised.pink,
-.floating-button.pink {
+.floating-button.pink,
+.md-radio-group.pink .md-radio-inner {
   background: #e91e63;
 }
 
@@ -1571,7 +1632,8 @@ body.mobile a:active {
 
 .color-purple-dark,
 .button-flat.dark.purple,
-.button-flat-icon.dark.purple {
+.button-flat-icon.dark.purple,
+.md-radio-group.purple .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #9c27b0;
 }
 
@@ -1590,7 +1652,8 @@ body.mobile a:active {
 }
 
 .button-raised.purple,
-.floating-button.purple {
+.floating-button.purple,
+.md-radio-group.purple .md-radio-inner {
   background: #9c27b0;
 }
 
@@ -1631,7 +1694,8 @@ body.mobile a:active {
 
 .color-deep-purple-dark,
 .button-flat.dark.deep-purple,
-.button-flat-icon.dark.deep-purple {
+.button-flat-icon.dark.deep-purple,
+.md-radio-group.deep-purple .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #673ab7;
 }
 
@@ -1650,7 +1714,8 @@ body.mobile a:active {
 }
 
 .button-raised.deep-purple,
-.floating-button.deep-purple {
+.floating-button.deep-purple,
+.md-radio-group.deep-purple .md-radio-inner {
   background: #673ab7;
 }
 
@@ -1691,7 +1756,8 @@ body.mobile a:active {
 
 .color-indigo-dark,
 .button-flat.dark.indigo,
-.button-flat-icon.dark.indigo {
+.button-flat-icon.dark.indigo,
+.md-radio-group.indigo .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #3f51b5;
 }
 
@@ -1710,7 +1776,8 @@ body.mobile a:active {
 }
 
 .button-raised.indigo,
-.floating-button.indigo {
+.floating-button.indigo,
+.md-radio-group.indigo .md-radio-inner {
   background: #3f51b5;
 }
 
@@ -1751,7 +1818,8 @@ body.mobile a:active {
 
 .color-blue-dark,
 .button-flat.dark.blue,
-.button-flat-icon.dark.blue {
+.button-flat-icon.dark.blue,
+.md-radio-group.blue .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #2196f3;
 }
 
@@ -1770,7 +1838,8 @@ body.mobile a:active {
 }
 
 .button-raised.blue,
-.floating-button.blue {
+.floating-button.blue,
+.md-radio-group.blue .md-radio-inner {
   background: #2196f3;
 }
 
@@ -1811,7 +1880,8 @@ body.mobile a:active {
 
 .color-light-blue-dark,
 .button-flat.dark.light-blue,
-.button-flat-icon.dark.light-blue {
+.button-flat-icon.dark.light-blue,
+.md-radio-group.light-blue .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #03a9f4;
 }
 
@@ -1830,7 +1900,8 @@ body.mobile a:active {
 }
 
 .button-raised.light-blue,
-.floating-button.light-blue {
+.floating-button.light-blue,
+.md-radio-group.light-blue .md-radio-inner {
   background: #03a9f4;
 }
 
@@ -1871,7 +1942,8 @@ body.mobile a:active {
 
 .color-cyan-dark,
 .button-flat.dark.cyan,
-.button-flat-icon.dark.cyan {
+.button-flat-icon.dark.cyan,
+.md-radio-group.cyan .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #00bcd4;
 }
 
@@ -1890,7 +1962,8 @@ body.mobile a:active {
 }
 
 .button-raised.cyan,
-.floating-button.cyan {
+.floating-button.cyan,
+.md-radio-group.cyan .md-radio-inner {
   background: #00bcd4;
 }
 
@@ -1931,7 +2004,8 @@ body.mobile a:active {
 
 .color-teal-dark,
 .button-flat.dark.teal,
-.button-flat-icon.dark.teal {
+.button-flat-icon.dark.teal,
+.md-radio-group.teal .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #009688;
 }
 
@@ -1950,7 +2024,8 @@ body.mobile a:active {
 }
 
 .button-raised.teal,
-.floating-button.teal {
+.floating-button.teal,
+.md-radio-group.teal .md-radio-inner {
   background: #009688;
 }
 
@@ -1991,7 +2066,8 @@ body.mobile a:active {
 
 .color-green-dark,
 .button-flat.dark.green,
-.button-flat-icon.dark.green {
+.button-flat-icon.dark.green,
+.md-radio-group.green .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #4caf50;
 }
 
@@ -2010,7 +2086,8 @@ body.mobile a:active {
 }
 
 .button-raised.green,
-.floating-button.green {
+.floating-button.green,
+.md-radio-group.green .md-radio-inner {
   background: #4caf50;
 }
 
@@ -2051,7 +2128,8 @@ body.mobile a:active {
 
 .color-light-green-dark,
 .button-flat.dark.light-green,
-.button-flat-icon.dark.light-green {
+.button-flat-icon.dark.light-green,
+.md-radio-group.light-green .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #8bc34a;
 }
 
@@ -2070,7 +2148,8 @@ body.mobile a:active {
 }
 
 .button-raised.light-green,
-.floating-button.light-green {
+.floating-button.light-green,
+.md-radio-group.light-green .md-radio-inner {
   background: #8bc34a;
 }
 
@@ -2111,7 +2190,8 @@ body.mobile a:active {
 
 .color-lime-dark,
 .button-flat.dark.lime,
-.button-flat-icon.dark.lime {
+.button-flat-icon.dark.lime,
+.md-radio-group.lime .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #cddc39;
 }
 
@@ -2130,7 +2210,8 @@ body.mobile a:active {
 }
 
 .button-raised.lime,
-.floating-button.lime {
+.floating-button.lime,
+.md-radio-group.lime .md-radio-inner {
   background: #cddc39;
 }
 
@@ -2171,7 +2252,8 @@ body.mobile a:active {
 
 .color-yellow-dark,
 .button-flat.dark.yellow,
-.button-flat-icon.dark.yellow {
+.button-flat-icon.dark.yellow,
+.md-radio-group.yellow .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #ffeb3b;
 }
 
@@ -2190,7 +2272,8 @@ body.mobile a:active {
 }
 
 .button-raised.yellow,
-.floating-button.yellow {
+.floating-button.yellow,
+.md-radio-group.yellow .md-radio-inner {
   background: #ffeb3b;
 }
 
@@ -2231,7 +2314,8 @@ body.mobile a:active {
 
 .color-amber-dark,
 .button-flat.dark.amber,
-.button-flat-icon.dark.amber {
+.button-flat-icon.dark.amber,
+.md-radio-group.amber .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #ffc107;
 }
 
@@ -2250,7 +2334,8 @@ body.mobile a:active {
 }
 
 .button-raised.amber,
-.floating-button.amber {
+.floating-button.amber,
+.md-radio-group.amber .md-radio-inner {
   background: #ffc107;
 }
 
@@ -2291,7 +2376,8 @@ body.mobile a:active {
 
 .color-orange-dark,
 .button-flat.dark.orange,
-.button-flat-icon.dark.orange {
+.button-flat-icon.dark.orange,
+.md-radio-group.orange .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #ff9800;
 }
 
@@ -2310,7 +2396,8 @@ body.mobile a:active {
 }
 
 .button-raised.orange,
-.floating-button.orange {
+.floating-button.orange,
+.md-radio-group.orange .md-radio-inner {
   background: #ff9800;
 }
 
@@ -2351,7 +2438,8 @@ body.mobile a:active {
 
 .color-deep-orange-dark,
 .button-flat.dark.deep-orange,
-.button-flat-icon.dark.deep-orange {
+.button-flat-icon.dark.deep-orange,
+.md-radio-group.deep-orange .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #ff5722;
 }
 
@@ -2370,7 +2458,8 @@ body.mobile a:active {
 }
 
 .button-raised.deep-orange,
-.floating-button.deep-orange {
+.floating-button.deep-orange,
+.md-radio-group.deep-orange .md-radio-inner {
   background: #ff5722;
 }
 
@@ -2411,7 +2500,8 @@ body.mobile a:active {
 
 .color-brown-dark,
 .button-flat.dark.brown,
-.button-flat-icon.dark.brown {
+.button-flat-icon.dark.brown,
+.md-radio-group.brown .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #795548;
 }
 
@@ -2430,7 +2520,8 @@ body.mobile a:active {
 }
 
 .button-raised.brown,
-.floating-button.brown {
+.floating-button.brown,
+.md-radio-group.brown .md-radio-inner {
   background: #795548;
 }
 
@@ -2471,7 +2562,8 @@ body.mobile a:active {
 
 .color-grey-dark,
 .button-flat.dark.grey,
-.button-flat-icon.dark.grey {
+.button-flat-icon.dark.grey,
+.md-radio-group.grey .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #9e9e9e;
 }
 
@@ -2490,7 +2582,8 @@ body.mobile a:active {
 }
 
 .button-raised.grey,
-.floating-button.grey {
+.floating-button.grey,
+.md-radio-group.grey .md-radio-inner {
   background: #9e9e9e;
 }
 
@@ -2531,7 +2624,8 @@ body.mobile a:active {
 
 .color-blue-grey-dark,
 .button-flat.dark.blue-grey,
-.button-flat-icon.dark.blue-grey {
+.button-flat-icon.dark.blue-grey,
+.md-radio-group.blue-grey .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #607d8b;
 }
 
@@ -2550,7 +2644,8 @@ body.mobile a:active {
 }
 
 .button-raised.blue-grey,
-.floating-button.blue-grey {
+.floating-button.blue-grey,
+.md-radio-group.blue-grey .md-radio-inner {
   background: #607d8b;
 }
 
@@ -2591,7 +2686,8 @@ body.mobile a:active {
 
 .color-white-dark,
 .button-flat.dark.white,
-.button-flat-icon.dark.white {
+.button-flat-icon.dark.white,
+.md-radio-group.white .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #ffffff;
 }
 
@@ -2610,7 +2706,8 @@ body.mobile a:active {
 }
 
 .button-raised.white,
-.floating-button.white {
+.floating-button.white,
+.md-radio-group.white .md-radio-inner {
   background: #ffffff;
 }
 
@@ -2651,7 +2748,8 @@ body.mobile a:active {
 
 .color-black-dark,
 .button-flat.dark.black,
-.button-flat-icon.dark.black {
+.button-flat-icon.dark.black,
+.md-radio-group.black .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #000000;
 }
 
@@ -2670,7 +2768,8 @@ body.mobile a:active {
 }
 
 .button-raised.black,
-.floating-button.black {
+.floating-button.black,
+.md-radio-group.black .md-radio-inner {
   background: #000000;
 }
 
@@ -2711,7 +2810,8 @@ body.mobile a:active {
 
 .color-darkest-dark,
 .button-flat.dark.darkest,
-.button-flat-icon.dark.darkest {
+.button-flat-icon.dark.darkest,
+.md-radio-group.darkest .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #212121;
 }
 
@@ -2730,7 +2830,8 @@ body.mobile a:active {
 }
 
 .button-raised.darkest,
-.floating-button.darkest {
+.floating-button.darkest,
+.md-radio-group.darkest .md-radio-inner {
   background: #212121;
 }
 
@@ -2771,7 +2872,8 @@ body.mobile a:active {
 
 .color-dark-grey-dark,
 .button-flat.dark.dark-grey,
-.button-flat-icon.dark.dark-grey {
+.button-flat-icon.dark.dark-grey,
+.md-radio-group.dark-grey .md-radio-input:checked + .md-radio-label .md-radio-outer {
   color: #424242;
 }
 
@@ -2790,7 +2892,8 @@ body.mobile a:active {
 }
 
 .button-raised.dark-grey,
-.floating-button.dark-grey {
+.floating-button.dark-grey,
+.md-radio-group.dark-grey .md-radio-inner {
   background: #424242;
 }
 
