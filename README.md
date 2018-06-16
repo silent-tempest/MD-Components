@@ -1,4 +1,15 @@
+# The repository has been archived!
+
+Take a look at these repositories:
+
+[Google's MDC](https://github.com/material-components/material-components-web/)
+
+[Google's MDL](https://github.com/google/material-design-lite)
+
+[Materialize](https://materializecss.com/)
+
 # MD-Components
+
 A set of Material Design components and a 12-column grid. I wrote this framework in early 2017, in early 2018 I decided to refactor it.
 
 ## Example
