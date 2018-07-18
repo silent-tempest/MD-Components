@@ -4,7 +4,4 @@ MAIN    := index.sass
 all: $(SOURCES)
 
 %.sass:
-	node-sass -o styles sass/$@
-
-%.scss:
-	node-sass -o styles sass/$@
+	node-sass -o build sass/$@
