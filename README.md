@@ -1,4 +1,4 @@
-# The repository has been archived!
+# ~~The repository has been archived!~~
 
 Take a look at these repositories:
 
