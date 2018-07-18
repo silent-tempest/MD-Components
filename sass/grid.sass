@@ -1,0 +1,91 @@
+@import './%clear'
+
+@mixin break-point ( $break-point, $previous, $current )
+  @media ( min-width: $break-point )
+    #{ build-selector( 'offset', '-#{ $previous }-' ) }
+      margin-left: 0
+
+    @for $i from 12 through 1
+      .offset-#{ $current }-#{ $i }
+        margin-left: get-value( $i )
+
+      .col-#{ $current }-#{ $i }
+        width: get-value( $i )
+
+@function build-selector ( $name: 'col', $vs: '-' )
+  $selector: ''
+
+  @each $v in $vs
+    @for $i from 12 through 1
+      $selector: '#{ $selector }.#{ $name }#{ $v }#{ $i }, '
+
+  @return $selector
+
+@function get-value ( $i )
+  @return #{ 100% / 12 * $i }
+
+.container
+  margin: 0 auto
+  max-width: 960px
+  width: 100%
+
+#{ build-selector( 'col', '-' '-xs-' '-sm-' '-md-' '-lg-' '-xl-' ) }
+  float: left
+  padding: 16px
+
+@media ( max-width: 360px )
+  #{ build-selector( 'col', '-sm-' ) }
+    width: 100%;
+
+@media ( max-width: 660px )
+  #{ build-selector( 'col', '-md-' ) }
+    width: 100%;
+
+@media ( max-width: 960px )
+  #{ build-selector( 'col', '-lg-' ) }
+    width: 100%;
+
+@media ( max-width: 1280px )
+  #{ build-selector( 'col', '-xl-' ) }
+    width: 100%;
+
+@for $i from 12 through 1
+  .offset-#{ $i }
+    margin-left: get-value( $i )
+
+  .col-#{ $i }, .col-xs-#{ $i }
+    width: get-value( $i )
+
+/** XS - Extra Small
+ * ------------------------- */
+
+@media ( max-width: 360px )
+  @for $i from 12 through 1
+    .offset-xs-#{ $i }
+      margin-left: get-value( $i )
+
+/** SM - Small
+ * ------------------------- */
+
+@include break-point( 361px, 'xs', 'sm' )
+
+/** MD - Medium
+ * ------------------------- */
+
+@include break-point( 661px, 'sm', 'md' )
+
+/** LG - Large
+ * ------------------------- */
+
+@include break-point( 961px, 'md', 'lg' )
+
+/** XL - Extra Large
+ * ------------------------- */
+
+@include break-point( 1281px, 'lg', 'xl' )
+
+.container::before, .row::before
+  @extend %clear::before
+
+.container::after, .row::after
+  @extend %clear::after
