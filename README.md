@@ -1,22 +1,42 @@
-# Material Design Components
+# ~~The repository has been archived!~~
 
-A set of Material Design components and a 12-column grid.
+Take a look at these repositories:
 
-### The Components
+[Google's MDC](https://github.com/material-components/material-components-web/)
 
-* 12-column grid (columns, offsets)
-* Buttons
-  * Raised
+[Google's MDL](https://github.com/google/material-design-lite)
 
-### Components to be added
+[Materialize](https://materializecss.com/)
 
-* Buttons
+# MD-Components
+
+A set of Material Design components and a 12-column grid. I wrote this framework in early 2017, in early 2018 I decided to refactor it.
+
+## Example
+
+See an [example](https://silent-tempest.github.io/MD-Components/example)
+
+## Components
++ 12-column grid
+* Buttons (in process)
   * Flat
-  * Flat Icon
-  * Floating
-* Checkbox
-* Radio
-* Input Box
+  * Flat-Icon
+  * Raised (in process 75%)
+  * Floating (in process 75%)
+  * Checkbox (in process 0%)
+  * Radio (in process 0%)
+* Input Box (in process 75%)
+* Card
+
+## Will be added
 * Toolbar
 * Drawer
 * Dialog Box
+
+## Grid
+Grid has five breakpoints:
+1. XS - Extra Small (less than 361px)
+2. SM - Small (361px-660px)
+3. MD - Medium (661px-960px)
+4. LG - Large (961px-1280px)
+5. XL - Extra Large (greater than 1280px)
