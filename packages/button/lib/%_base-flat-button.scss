@@ -1,0 +1,23 @@
+%_base-flat-button {
+  transition-property: background;
+  background: transparent;
+  color: rgba( 0, 0, 0, 0.87 );
+}
+
+@mixin flat-button-background ( $color ) {
+  &.dark:active {
+    background: rgba( $color, 0.12 );
+  }
+
+  &:active {
+    background: rgba( $color, 0.4 );
+  }
+}
+
+@mixin flat-button-color ( $color ) {
+  color: rgba( $color, 0.87 );
+
+  &.dark {
+    color: $color;
+  }
+}

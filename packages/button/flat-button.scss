@@ -1,0 +1,9 @@
+@import './lib/%_base-standart-button';
+@import './lib/%_base-flat-button';
+@import './lib/%_base-button';
+
+.flat-button {
+  @extend %_base-standart-button;
+  @extend %_base-flat-button;
+  @extend %_base-button;
+}

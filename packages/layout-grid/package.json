@@ -1,0 +1,10 @@
+{
+  "name": "@components/layout-grid",
+  "version": "1.0.0",
+  "description": "12 column layout grid from material-design-components package.",
+  "keywords": [
+    "grid"
+  ],
+  "author": "SILENT",
+  "license": "MIT"
+}

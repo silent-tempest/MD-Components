@@ -1,0 +1,11 @@
+{
+  "name": "@components/button",
+  "version": "1.0.0",
+  "description": "Material Design button from material-design-components package.",
+  "main": "index.js",
+  "keywords": [
+    "button"
+  ],
+  "author": "SILENT",
+  "license": "MIT"
+}

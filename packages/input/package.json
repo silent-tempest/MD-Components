@@ -1,0 +1,12 @@
+{
+  "name": "@components/input",
+  "version": "1.0.0",
+  "description": "Material Design textfield from material-design-components package.",
+  "main": "index.js",
+  "keywords": [
+    "textfield",
+    "input"
+  ],
+  "author": "SILENT",
+  "license": "MIT"
+}

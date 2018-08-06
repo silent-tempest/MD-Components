@@ -1,0 +1,17 @@
+%_base-button {
+  border: none;
+  cursor: default;
+  display: inline-block;
+  font-weight: 500;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: 75ms;
+}
+
+%_base-button:active {
+  transition-duration: 100ms;
+}
