@@ -16,7 +16,13 @@
       .column-#{$current}-#{$i}
         width: _get-value( $i )
 
-@function _build-selector ( $name, $values )
+      .column-#{$previous}-0
+        display: initial
+
+    .column-#{$current}-0
+      display: none
+
+@function _build-selector ( $name, $values, $from: 12, $through: 1 )
   $selector: ''
 
   @each $value in $values
@@ -45,17 +51,29 @@
   #{_build-selector( 'column', '-sm-' )}
     width: 100%;
 
+  .column-sm-0
+    display: none
+
 @media ( max-width: 660px )
   #{_build-selector( 'column', '-md-' )}
     width: 100%;
+
+  .column-md-0
+    display: none
 
 @media ( max-width: 960px )
   #{_build-selector( 'column', '-lg-' )}
     width: 100%;
 
+  .column-lg-0
+    display: none
+
 @media ( max-width: 1280px )
   #{_build-selector( 'column', '-xl-' )}
     width: 100%;
+
+  .column-xl-0
+    display: none
 
 /** XS - Extra Small
  * ------------------------- */
@@ -66,6 +84,9 @@
 
   .column-#{$i}, .column-xs-#{$i}
     width: _get-value( $i )
+
+.column-0, .column-xs-0
+  display: none
 
 @media ( max-width: 360px )
   @for $i from 12 through 1
