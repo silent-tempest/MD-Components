@@ -1,7 +1,7 @@
 {
-  "name": "@components/layout-grid",
+  "name": "waft.layout-grid",
   "version": "1.0.0",
-  "description": "12 column layout grid from material-design-components package.",
+  "description": "",
   "keywords": [
     "grid"
   ],

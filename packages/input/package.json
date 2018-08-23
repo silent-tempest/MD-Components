@@ -1,7 +1,7 @@
 {
-  "name": "@components/input",
+  "name": "waft.input",
   "version": "1.0.0",
-  "description": "Material Design textfield from material-design-components package.",
+  "description": "",
   "main": "index.js",
   "keywords": [
     "textfield",

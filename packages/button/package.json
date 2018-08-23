@@ -1,7 +1,7 @@
 {
-  "name": "@components/button",
+  "name": "waft.button",
   "version": "1.0.0",
-  "description": "Material Design button from material-design-components package.",
+  "description": "",
   "main": "index.js",
   "keywords": [
     "button"
