@@ -1,0 +1,131 @@
+/*!
+ * https://github.com/silent-tempest/material-design-components
+ * material-design-components (c) 2016-2018 SILENT.
+ * Released under the MIT License.
+ */
+
+@mixin _create-breakpoint ( $breakpoint, $previous, $current )
+  @media ( min-width: $breakpoint )
+    #{_build-selector( 'offset', '-#{$previous}-' )}
+      margin-left: 0
+
+    @for $i from 12 through 1
+      .offset-#{$current}-#{$i}
+        margin-left: _get-value( $i )
+
+      .column-#{$current}-#{$i}
+        width: _get-value( $i )
+
+      .column-#{$previous}-0
+        display: initial
+
+    .column-#{$current}-0
+      display: none
+
+@function _build-selector ( $name, $values, $from: 12, $through: 1 )
+  $selector: ''
+
+  @each $value in $values
+    @for $i from 12 through 1
+      $selector: '#{$selector}.#{$name}#{$value}#{$i}, '
+
+  @return $selector
+
+@function _get-value ( $i )
+  @return #{100% / 12 * $i}
+
+#{_build-selector( 'column', '-' '-xs-' '-sm-' '-md-' '-lg-' '-xl-' )}
+  box-sizing: border-box
+  padding: 16px
+  margin: 0
+  float: left
+
+.column--no-padding
+  padding: 0
+
+#{_build-selector( 'offset', '-' '-xs-' '-sm-' '-md-' '-lg-' '-xl-' )}
+  box-sizing: border-box
+  float: left
+
+@media ( max-width: 360px )
+  #{_build-selector( 'column', '-sm-' )}
+    width: 100%;
+
+  .column-sm-0
+    display: none
+
+@media ( max-width: 660px )
+  #{_build-selector( 'column', '-md-' )}
+    width: 100%;
+
+  .column-md-0
+    display: none
+
+@media ( max-width: 960px )
+  #{_build-selector( 'column', '-lg-' )}
+    width: 100%;
+
+  .column-lg-0
+    display: none
+
+@media ( max-width: 1280px )
+  #{_build-selector( 'column', '-xl-' )}
+    width: 100%;
+
+  .column-xl-0
+    display: none
+
+/** XS - Extra Small
+ * ------------------------- */
+
+@for $i from 12 through 1
+  .offset-#{$i}
+    margin-left: _get-value( $i )
+
+  .column-#{$i}, .column-xs-#{$i}
+    width: _get-value( $i )
+
+.column-0, .column-xs-0
+  display: none
+
+@media ( max-width: 360px )
+  @for $i from 12 through 1
+    .offset-xs-#{$i}
+      margin-left: _get-value( $i )
+
+/** SM - Small
+ * ------------------------- */
+
+@include _create-breakpoint( 361px, 'xs', 'sm' )
+
+/** MD - Medium
+ * ------------------------- */
+
+@include _create-breakpoint( 661px, 'sm', 'md' )
+
+/** LG - Large
+ * ------------------------- */
+
+@include _create-breakpoint( 961px, 'md', 'lg' )
+
+/** XL - Extra Large
+ * ------------------------- */
+
+@include _create-breakpoint( 1281px, 'lg', 'xl' )
+
+.container
+  margin: 0 auto
+  max-width: 960px
+  width: 100%
+
+.container, .row
+  box-sizing: border-box
+
+.container::before, .row::before, .container::after, .row::after
+  content: ''
+
+.container::before, .row::before
+  display: table
+
+.container::after, .row::after
+  clear: both

@@ -1,0 +1,12 @@
+{
+  "name": "waft.input",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "textfield",
+    "input"
+  ],
+  "author": "SILENT",
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "waft.button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "button"
+  ],
+  "author": "SILENT",
+  "license": "MIT"
+}

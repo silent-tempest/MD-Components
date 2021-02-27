@@ -1,0 +1,206 @@
+/*!
+ * https://github.com/silent-tempest/material-design-components
+ * material-design-components (c) 2016-2018 SILENT.
+ * Released under the MIT License.
+ */
+
+// <div class="input--group dark yellow">
+//   <input class="input__native" placeholder="Enter strong password." id="password" type="password" required="" />
+//   <label class="input__label" for="password">password</label>
+//   <span class="input__helper">You can use online password generators</span> <!-- optional -->
+//   <hr class="input__highlight-static" />
+//   <hr class="input__highlight" />
+// </div>
+
+.input--group {
+  .input__highlight-static,
+  .input__highlight,
+  .input__native,
+  .input__label {
+    position: absolute;
+  }
+
+  .input__highlight-static,
+  .input__highlight {
+    left: 0;
+    top: 44px + 12px;
+  }
+
+  .input__native {
+    left: 0;
+    top: 12px;
+  }
+
+  .input__highlight-static,
+  .input__highlight {
+    background: #000;
+    right: 0;
+  }
+
+  .input__native,
+  .input__helper,
+  .input__label {
+    padding: 0 2px;
+  }
+
+  .input__native,
+  .input__label {
+    font-size: 16px;
+  }
+
+  .input__native {
+    width: 100%;
+    height: 44px;
+    color: rgba( 0, 0, 0, 0.87 );
+  }
+
+  .input__helper {
+    left: 0;
+    top: 44px + 16px;
+    line-height: 24px - 8px;
+    font-size: 12px;
+    color: rgba( 0, 0, 0, 0.54 );
+    position: relative;
+  }
+
+  .input__highlight-static {
+    background: rgba( 0, 0, 0, 0.12 );
+    height: 1px;
+  }
+
+  /**
+   * 1. active to inactive state duration.
+   */
+  .input__highlight,
+  .input__label {
+    transition-timing-function: ease-in-out;
+    transition-duration: 175ms; // 1
+  }
+
+  .input__highlight {
+    transform: scaleX( 0 );
+    transform-origin: right center;
+    transition-property: transform;
+    height: 2px;
+    background: rgba( 0, 0, 0, 0.87 );
+  }
+
+  .input__label {
+    left: 0;
+    top: 12px;
+    color: rgba( 0, 0, 0, 0.38 );
+    line-height: 44px;
+    transition-property: top, color, font-size, font-weight, line-height;
+    cursor: text;
+  }
+
+  /**
+   * 1. inactive to active state duration.
+   */
+  .input__native:focus ~ .input__highlight,
+  .input__native:focus ~ .input__label,
+  &.input--not-empty .input__label {
+    transition-duration: 150ms; // 1
+  }
+
+  .input__native:focus ~ .input__highlight {
+    transform: scaleX( 1 );
+    transform-origin: left center;
+  }
+
+  .input__native:focus ~ .input__label,
+  &.input--not-empty .input__label {
+    top: 0;
+    line-height: 12px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .input__native:focus ~ .input__label {
+    color: rgba( 0, 0, 0, 0.87 );
+  }
+
+  .input__native--password {
+    letter-spacing: 5px;
+  }
+
+  .input__native--password::placeholder {
+    letter-spacing: initial;
+  }
+
+  .input__native::placeholder {
+    color: transparent;
+  }
+
+  .input__native:focus::placeholder {
+    color: rgba( 0, 0, 0, 0.38 );
+  }
+
+  /**
+   * 1. 44px - .input--group
+   *    12px - .input__native
+   *    24px - .input__helper
+   */
+
+  position: relative;
+  width: 100%;
+  min-height: 44px + 12px + 24px; // 1.
+}
+
+.input--group.dark {
+  .input__helper {
+    color: rgba( 255, 255, 255, 0.7 );
+  }
+
+  .input__native,
+  .input__native:focus ~ label {
+    color: #fff;
+  }
+
+  .input__highlight-static {
+    background: rgba( 255, 255, 255, 0.5 );
+  }
+
+  .input__highlight {
+    background: #fff;
+  }
+
+  .input__label {
+    color: rgba( 255, 255, 255, 0.5 );
+  }
+
+  .input__native:focus::placeholder {
+    color: rgba( 255, 255, 255, 0.5 );
+  }
+}
+
+@mixin input-color ( $color ) {
+  .input__native:focus ~ .input__label {
+    color: rgba( $color, 0.54 );
+  }
+
+  &.dark .input__native:focus ~ .input__label {
+    color: rgba( $color, 0.7 );
+  }
+
+  .input__highlight {
+    background: rgba( $color, 0.42 );
+  }
+
+  &.dark .input__highlight {
+    background: rgba( $color, 0.7 );
+  }
+}
+
+@mixin input-font-size ( $size ) {
+  .input__native,
+  .input__label {
+    font-size: $size;
+  }
+}
+
+@mixin input-helper-font-size ( $size ) {
+  .input__helper {
+    font-size: $size;
+  }
+}
